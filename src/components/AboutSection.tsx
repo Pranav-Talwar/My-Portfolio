@@ -19,7 +19,7 @@ export default function AboutSection() {
         {/* Left — bio */}
         <div className="md:w-[55%] px-4 md:px-8 py-6 md:py-10">
           <p className="text-[var(--text-secondary)] text-sm md:text-[15px] leading-relaxed">
-            I&apos;m a Computer Science student passionate about building things
+            I&apos;m a Recent Grad from a Computer Programming Diploma, passionate about building things
             that live on the internet. My journey into development started when I
             realized I could create tools that actually help people.
             <br /><br />
@@ -40,7 +40,7 @@ export default function AboutSection() {
               Education
             </p>
             <div className="border border-[var(--border)] rounded-lg p-4 bg-[var(--bg-card)] hover:border-[var(--border-alt)] transition-colors duration-200">
-              <p className="text-sm font-bold text-[var(--text-heading)]">Computer Science Diploma</p>
+              <p className="text-sm font-bold text-[var(--text-heading)]">Computer Programming Diploma</p>
               <p className="text-xs text-[var(--text-muted)] mt-1">Red Deer Polytechnic</p>
               <p className="text-xs text-[var(--text-faint)] font-mono mt-0.5">2024 — 2025</p>
             </div>
