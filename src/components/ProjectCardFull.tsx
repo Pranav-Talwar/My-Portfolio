@@ -70,7 +70,7 @@ export default function ProjectCardFull({
               <div className="text-[11px] font-bold text-emerald-500 uppercase tracking-widest mb-2 mt-[-2px]">
                 Problem
               </div>
-              <p className="text-sm text-[var(--text-heading)] leading-relaxed">
+              <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
                 {project.challenge}
               </p>
             </div>
@@ -78,7 +78,7 @@ export default function ProjectCardFull({
               <div className="text-[11px] font-bold text-emerald-500 uppercase tracking-widest mb-2 mt-[-2px]">
                 Solution
               </div>
-              <p className="text-sm text-[var(--text-heading)] leading-relaxed">
+              <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
                 {project.solution}
               </p>
             </div>
@@ -90,7 +90,7 @@ export default function ProjectCardFull({
             {project.techStack.map((tech) => (
               <span
                 key={tech}
-                className="px-2.5 py-1 rounded border border-[var(--border)] bg-[var(--bg-surface)] text-[11px] font-mono text-[var(--text-body)] cursor-default"
+                className="px-2.5 py-1 rounded border border-[var(--border)] bg-[var(--bg-surface)] text-[11px] font-mono text-[var(--text-secondary)] cursor-default"
               >
                 {tech}
               </span>

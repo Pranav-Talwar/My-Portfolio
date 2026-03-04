@@ -20,9 +20,9 @@ const projects: Project[] = [
     title: "Para-Athlete Equipment Testing Dashboard",
     status: "live",
     challenge:
-      "Para-athletes have 2\u00D7 the injury rate partly because equipment is fitted by feel, not data. Coaches had no tooling.",
+      "Para-athletes have 2\u00D7 the injury rate partly because equipment is fitted by feel, not data.",
     solution:
-      "A platform for Paralympic coaches to run motion-sensor tests and log athlete feedback \u2014 replacing guesswork with evidence.",
+      "A platform to run motion-sensor tests and log athlete movement data and feedback \u2014 replacing guesswork with evidence.",
     techStack: ["React", "TypeScript", "D3.js", "Express", "PostgreSQL"],
     links: [
       { href: "#", label: "View Details", type: "primary" },
