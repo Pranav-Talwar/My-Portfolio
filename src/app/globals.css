@@ -40,6 +40,11 @@
   --showcase-to: #d1d5db;
 }
 
+html {
+  zoom: 90%;
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   background-color: var(--bg-base);

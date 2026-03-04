@@ -16,8 +16,12 @@ export default function AboutSection() {
 
       {/* Body — top: bio | edu+skills */}
       <div className="flex flex-col md:flex-row divide-y md:divide-y-0 md:divide-x divide-[var(--border)]">
+        
         {/* Left — bio */}
         <div className="md:w-[55%] px-4 md:px-8 py-6 md:py-10">
+           <p className="text-[11px] font-mono text-[var(--text-muted)] uppercase tracking-widest mb-4">
+              Stuff You Won't Read
+            </p>
           <p className="text-[var(--text-secondary)] text-sm md:text-[15px] leading-relaxed">
             I&apos;m a Recent Grad from a Computer Programming Diploma, passionate about building things
             that live on the internet. My journey into development started when I
