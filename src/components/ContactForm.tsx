@@ -21,7 +21,7 @@ export default function ContactForm() {
   return (
     <section id="contact" className="border-b border-[var(--border)] transition-colors duration-300">
       {/* Header */}
-      <div className="px-4 md:px-8 pt-8 md:pt-10 pb-2 border-b border-[var(--border)]">
+      <div className="px-4 md:px-8 pt-8 md:pt-10 pb-2 border-b border-[var(--border)] text-center">
         <p className="text-[11px] font-mono text-[var(--text-muted)] uppercase tracking-widest mb-2">
           Contact
         </p>

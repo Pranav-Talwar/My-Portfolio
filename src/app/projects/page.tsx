@@ -135,7 +135,7 @@ export default function ProjectsPage() {
       {/* ── Section 01 — Featured Work ── */}
       <section className="border-b border-[var(--border)] transition-colors duration-300">
         <div className="px-4 md:px-8 py-6 md:py-8 border-b border-[var(--border)] bg-[var(--bg-surface)] sticky top-14 md:top-16 z-40 backdrop-blur-xl transition-colors duration-300">
-          <h2 className="text-2xl font-bold text-[var(--text-heading)]">Featured Work</h2>
+          <h2 className="text-2xl font-bold text-[var(--text-heading)] text-center">Featured Work</h2>
         </div>
 
         <div className="px-4 md:px-8 py-8">
@@ -185,7 +185,7 @@ export default function ProjectsPage() {
       {/* ── Section 02 — XtapX Labs ── */}
       <section className="border-b border-[var(--border)] transition-colors duration-300">
         <div className="px-4 md:px-8 py-6 md:py-8 border-b border-[var(--border)] bg-[var(--bg-surface)] sticky top-14 md:top-16 z-40 backdrop-blur-xl transition-colors duration-300">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-center gap-3">
             <h2 className="text-2xl font-bold text-[var(--text-heading)]">Currently working on</h2>
             <span className="relative flex h-2.5 w-2.5">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75" />
@@ -275,7 +275,7 @@ export default function ProjectsPage() {
       </section>
       <section className="border-b border-[var(--border)] transition-colors duration-300">
         <div className="px-4 md:px-8 py-6 md:py-8 border-b border-[var(--border)] bg-[var(--bg-surface)] sticky top-14 md:top-16 z-40 backdrop-blur-xl transition-colors duration-300">
-          <h2 className="text-2xl font-bold text-[var(--text-heading)]">Side Projects</h2>
+          <h2 className="text-2xl font-bold text-[var(--text-heading)] text-center">Side Projects</h2>
         </div>
 
         <div className="px-4 md:px-8 py-8">

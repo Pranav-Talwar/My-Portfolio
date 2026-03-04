@@ -25,9 +25,7 @@ export default function HeroSection() {
           {/* Bio */}
           <div>
             <p className="text-sm sm:text-base text-[var(--text-body)] font-medium mb-1">Full-Stack Developer</p>
-            <p className="text-[var(--text-muted)] text-xs sm:text-sm max-w-sm leading-relaxed">
-              Building systems that hold under load. 
-            </p>
+        
           </div>
         </div>
 

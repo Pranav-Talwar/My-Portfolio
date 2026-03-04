@@ -11,7 +11,7 @@ export default function AboutSection() {
     <section className="border-b border-[var(--border)] transition-colors duration-300">
       {/* Header */}
       <div className="px-4 md:px-8 py-6 md:py-8 border-b border-[var(--border)] bg-[var(--bg-surface)] sticky top-14 md:top-16 z-40 backdrop-blur-xl transition-colors duration-300">
-        <h2 className="text-2xl font-bold text-[var(--text-heading)]">About Me</h2>
+        <h2 className="text-2xl font-bold text-[var(--text-heading)] text-center">About Me</h2>
       </div>
 
       {/* Body — top: bio | edu+skills */}
@@ -41,7 +41,7 @@ export default function AboutSection() {
             </p>
             <div className="border border-[var(--border)] rounded-lg p-4 bg-[var(--bg-card)] hover:border-[var(--border-alt)] transition-colors duration-200">
               <p className="text-sm font-bold text-[var(--text-heading)]">Computer Programming Diploma</p>
-              <p className="text-xs text-[var(--text-muted)] mt-1">Red Deer Polytechnic</p>
+              <p className="text-xs text-emerald-500 mt-1">Red Deer Polytechnic</p>
               <p className="text-xs text-[var(--text-faint)] font-mono mt-0.5">2024 — 2025</p>
             </div>
           </div>
@@ -54,7 +54,7 @@ export default function AboutSection() {
             <div className="flex flex-col">
               {skillGroups.map((group, i) => (
                 <div key={group.category}>
-                  {i > 0 && <hr className="border-[var(--border)]" />}
+                  {i > 0 && <hr className="border-emerald-500" />}
                   <p className="py-3 text-xs text-[var(--text-secondary)] font-mono leading-relaxed">
                     {group.skills}
                   </p>

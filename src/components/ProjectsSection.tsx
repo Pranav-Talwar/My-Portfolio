@@ -12,7 +12,7 @@ const projects: Project[] = [
       "An ML model learns preferences in real-time and balances them across everyone in the space \u2014 anonymous, frictionless, continuous.",
     techStack: ["React", "TypeScript", "Python", "Supabase", "NFC"],
     links: [
-      { href: "#", label: "Case Study", type: "primary" },
+      { href: "#", label: "View Details", type: "primary" },
     ],
   },
   {
@@ -25,7 +25,7 @@ const projects: Project[] = [
       "A platform for Paralympic coaches to run motion-sensor tests and log athlete feedback \u2014 replacing guesswork with evidence.",
     techStack: ["React", "TypeScript", "D3.js", "Express", "PostgreSQL"],
     links: [
-      { href: "#", label: "Case Study", type: "primary" },
+      { href: "#", label: "View Details", type: "primary" },
     ],
   },
 ];
@@ -38,7 +38,7 @@ export default function ProjectsSection({ sectionRef }: ProjectsSectionProps) {
   return (
     <section id="projects" ref={sectionRef}>
       <div className="px-4 md:px-8 py-6 md:py-8 border-b border-[var(--border)] bg-[var(--bg-surface)] sticky top-14 md:top-16 z-40 backdrop-blur-xl transition-colors duration-300">
-        <h2 className="text-2xl font-bold text-[var(--text-heading)]">Featured Work</h2>
+        <h2 className="text-2xl font-bold text-[var(--text-heading)] text-center">Featured Work</h2>
       </div>
 
       <div>
