@@ -9,7 +9,7 @@ const projects: Project[] = [
     challenge:
       "Students won\u2019t fill out surveys while studying. Feedback never happened. One NFC tap connects you to the room\u2019s adaptive soundscapes.",
     solution:
-      "An ML model learns preferences in real-time and balances them across everyone in the space \u2014 anonymous, frictionless, continuous.",
+      "An ML model learns preferences in real-time and balances them across everyone in the space \u2014 personalized, frictionless, continuous.",
     techStack: ["React", "TypeScript", "Python", "Supabase", "NFC"],
     links: [
       { href: "#", label: "View Details", type: "primary" },
