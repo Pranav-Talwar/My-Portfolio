@@ -35,10 +35,14 @@ export default function NavBar() {
             Projects
           </Link>
           <Link
-            href="#"
-            className="relative transition-colors duration-200 hover:text-[var(--text-heading)] after:absolute after:bottom-[-2px] after:left-0 after:h-px after:w-0 after:bg-[var(--text-heading)] after:transition-all after:duration-200 hover:after:w-full"
+            href="/writings"
+            className={`relative transition-colors duration-200 hover:text-[var(--text-heading)] after:absolute after:bottom-[-2px] after:left-0 after:h-px after:bg-[var(--text-heading)] after:transition-all after:duration-200 ${
+              pathname === "/writings" || pathname.startsWith("/writings/")
+                ? "text-[var(--text-heading)] after:w-full"
+                : "after:w-0 hover:after:w-full"
+            }`}
           >
-            Blog
+            Writings
           </Link>
 
           <div className="h-4 w-px bg-[var(--border-alt)] mx-1" />

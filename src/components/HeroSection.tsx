@@ -19,12 +19,12 @@ export default function HeroSection() {
           {/* Terminal title */}
           <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-[var(--text-heading)] font-mono mb-6 md:mb-8 leading-tight">
             PRANAV_TALWAR
-            <span className="border-r-4 border-green-500 ml-1 cursor-blink">&nbsp;</span>
+            <span className="border-r-4 border-emerald-500 ml-1 cursor-blink">&nbsp;</span>
           </h1>
 
           {/* Bio */}
           <div>
-            <p className="text-sm sm:text-base text-[var(--text-body)] font-medium mb-1">Full-Stack Developer</p>
+            <p className="text-sm sm:text-base text-[var(--text-secondary)] font-medium mb-1">Full-Stack Developer</p>
         
           </div>
         </div>

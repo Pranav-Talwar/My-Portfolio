@@ -9,7 +9,7 @@ export default function SocialLinksSection() {
           className="flex items-center justify-between p-6 hover:bg-[var(--bg-card)] transition-all duration-200 group"
         >
           <div className="flex items-center gap-4">
-            <div className="w-10 h-10 rounded-lg bg-[#1a1a2e] border border-[#1a1a2e] text-white flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform duration-200">
+            <div className="w-10 h-10 rounded-lg bg-[var(--bg-card)] border border-[var(--border-alt)] text-[var(--text-heading)] flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
               <Mail className="w-5 h-5" />
             </div>
             <div>
@@ -66,7 +66,7 @@ export default function SocialLinksSection() {
           className="flex items-center justify-between p-6 hover:bg-[var(--bg-card)] transition-all duration-200 group"
         >
           <div className="flex items-center gap-4">
-            <div className="w-10 h-10 rounded-lg bg-[var(--text-faint)] text-white flex items-center justify-center shadow-sm border border-transparent group-hover:scale-110 transition-transform duration-200">
+            <div className="w-10 h-10 rounded-lg bg-[var(--bg-card)] border border-[var(--border-alt)] text-[var(--text-heading)] flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
               <FileText className="w-5 h-5" />
             </div>
             <div>

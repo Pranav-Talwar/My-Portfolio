@@ -1,34 +1,7 @@
 import { RefObject } from "react";
-import ProjectCardFull, { Project } from "./ProjectCardFull";
-
-const projects: Project[] = [
-  {
-    imgSrc: "/projects/Cosounds.png",
-    title: "CoSounds - Personalized Collective Adaptive Soundscapes",
-    status: "live",
-    challenge:
-      "Students won\u2019t fill out surveys while studying. Feedback never happened. One NFC tap connects you to the room\u2019s adaptive soundscapes.",
-    solution:
-      "An ML model learns preferences in real-time and balances them across everyone in the space \u2014 personalized, frictionless, continuous.",
-    techStack: ["React", "TypeScript", "Python", "Supabase", "NFC"],
-    links: [
-      { href: "#", label: "View Details", type: "primary" },
-    ],
-  },
-  {
-    imgSrc: "/projects/Testing Dashboard.png",
-    title: "Para-Athlete Equipment Testing Dashboard",
-    status: "live",
-    challenge:
-      "Para-athletes have 2\u00D7 the injury rate partly because equipment is fitted by feel, not data.",
-    solution:
-      "A platform to run motion-sensor tests and log athlete movement data and feedback \u2014 replacing guesswork with evidence.",
-    techStack: ["React", "TypeScript", "D3.js", "Express", "PostgreSQL"],
-    links: [
-      { href: "#", label: "View Details", type: "primary" },
-    ],
-  },
-];
+import { ArrowUpRight } from "lucide-react";
+import ProjectCardFull from "./ProjectCardFull";
+import { featuredProjects as projects } from "@/lib/data/projects";
 
 interface ProjectsSectionProps {
   sectionRef: RefObject<HTMLElement | null>;
@@ -37,8 +10,15 @@ interface ProjectsSectionProps {
 export default function ProjectsSection({ sectionRef }: ProjectsSectionProps) {
   return (
     <section id="projects" ref={sectionRef}>
-      <div className="px-4 md:px-8 py-6 md:py-8 border-b border-[var(--border)] bg-[var(--bg-surface)] sticky top-14 md:top-16 z-40 backdrop-blur-xl transition-colors duration-300">
-        <h2 className="text-2xl font-bold text-[var(--text-heading)] text-center">Featured Work</h2>
+      <div className="px-4 md:px-8 py-6 md:py-8 border-b border-[var(--border)] bg-[var(--bg-surface)] sticky top-14 md:top-16 z-40 backdrop-blur-xl transition-colors duration-300 flex items-center justify-between">
+        <h2 className="text-2xl md:text-3xl font-bold text-[var(--text-heading)]">Featured Work</h2>
+        <a
+          href="/projects"
+          className="inline-flex items-center gap-1 text-[12px] md:text-sm text-[var(--text-secondary)] hover:text-[var(--text-heading)] transition-colors group "
+        >
+          View All<span className="hidden md:inline"> Projects</span>
+          <ArrowUpRight className="w-3.5 h-3.5" />
+        </a>
       </div>
 
       <div>

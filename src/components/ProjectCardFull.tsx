@@ -1,15 +1,9 @@
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
+import type { Project } from "@/types";
 
-export interface Project {
-  imgSrc: string;
-  title: string;
-  status: "live" | "soon" | null;
-  challenge: string;
-  solution: string;
-  note?: string;
-  techStack: string[];
-  links: { href: string; label: string; type: "primary" | "secondary" }[];
-}
+// Re-export so existing imports from this module keep working
+export type { Project };
 
 export default function ProjectCardFull({
   project,
@@ -33,8 +27,8 @@ export default function ProjectCardFull({
     >
       <div className="p-4 sm:p-6 md:p-10">
         
-        {/* Title Centered */}
-        <div className="w-full mb-4 align-left ">
+        {/* Title */}
+        <div className="w-full mb-4">
           <h3 className="text-base md:text-lg font-bold text-[var(--text-heading)] tracking-tight flex items-center gap-3">
             <span className="text-emerald-500 font-mono text-sm font-normal">
               {String(index + 1).padStart(2, "0")}.
@@ -47,13 +41,16 @@ export default function ProjectCardFull({
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
 
           {/* Row 1 Content: Image */}
-          <div className={`group/img relative rounded-xl overflow-hidden border border-[var(--border)] h-fit ${isOdd ? 'md:order-2' : 'md:order-1'}`}>
-            <div className="bg-[linear-gradient(135deg,var(--showcase-from),var(--showcase-to))] p-4">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+          <div className={`group/img relative rounded-xl overflow-hidden h-fit ${isOdd ? 'md:order-2' : 'md:order-1'}`}>
+            <div className="bg-[linear-gradient(135deg,var(--showcase-from),var(--showcase-to))]">
+              <Image
                 src={project.imgSrc}
                 alt={project.title}
+                width={800}
+                height={500}
                 className="w-full rounded-lg shadow-xl transition-[filter] duration-150 group-hover/img:blur-[3px]"
+                style={{ height: "auto" }}
+                priority={index === 0}
               />
             </div>
             {/* Pop overlay */}
@@ -67,7 +64,7 @@ export default function ProjectCardFull({
           {/* Row 1 Content: Problem + Solution */}
           <div className={`flex flex-col justify-center gap-6 ${isOdd ? 'md:order-1' : 'md:order-2'}`}>
             <div>
-              <div className="text-[11px] font-bold text-emerald-500 uppercase tracking-widest mb-2 mt-[-2px]">
+              <div className="text-[11px] font-mono font-bold text-emerald-500 uppercase tracking-widest mb-2">
                 Problem
               </div>
               <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
@@ -75,7 +72,7 @@ export default function ProjectCardFull({
               </p>
             </div>
             <div>
-              <div className="text-[11px] font-bold text-emerald-500 uppercase tracking-widest mb-2 mt-[-2px]">
+              <div className="text-[11px] font-mono font-bold text-emerald-500 uppercase tracking-widest mb-2">
                 Solution
               </div>
               <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
@@ -90,7 +87,7 @@ export default function ProjectCardFull({
             {project.techStack.map((tech) => (
               <span
                 key={tech}
-                className="px-2.5 py-1 rounded border border-[var(--border)] bg-[var(--bg-surface)] text-[11px] font-mono text-[var(--text-secondary)] cursor-default"
+                className="px-2.5 py-1 rounded border border-[var(--border)] bg-[var(--bg-surface)] text-[10px] font-mono text-[var(--text-secondary)] hover:border-[var(--border-alt)] hover:text-[var(--text-heading)] transition-colors cursor-default"
               >
                 {tech}
               </span>
@@ -106,10 +103,10 @@ export default function ProjectCardFull({
                   e.preventDefault();
                   window.location.href = link.href;
                 }}
-                className={`inline-flex items-center gap-1.5 text-[15px] font-semibold transition-all duration-200 w-fit ${
+                className={`inline-flex items-center gap-1.5 text-sm font-semibold transition-all duration-200 w-fit ${
                   link.type === "primary"
-                    ? "text-[var(--text-muted)] group-hover/card:text-emerald-500"
-                    : "text-[var(--text-muted)] hover:text-[var(--text-heading)]"
+                    ? "text-emerald-500 hover:text-emerald-400"
+                    : "text-[var(--text-secondary)] hover:text-[var(--text-heading)]"
                 }`}
               >
                 {link.label}
