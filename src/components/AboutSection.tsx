@@ -30,12 +30,12 @@ const skills = [
 export default function AboutSection() {
   return (
     <section className="border-b border-[var(--border)] transition-colors duration-300">
-      {/* Header — split to match body grid */}
-      <div className="border-b border-[var(--border)] bg-[var(--bg-surface)] sticky top-14 md:top-16 z-40 backdrop-blur-xl transition-colors duration-300 grid grid-cols-1 md:grid-cols-[2fr_3fr] divide-y md:divide-y-0 md:divide-x divide-[var(--border)]">
-        <div className="px-4 md:px-8 py-5 md:py-6">
+      {/* Header — desktop only (sticky split) */}
+      <div className="hidden md:grid border-b border-[var(--border)] bg-[var(--bg-surface)] sticky top-16 z-40 backdrop-blur-xl transition-colors duration-300 grid-cols-[2fr_3fr] divide-x divide-[var(--border)]">
+        <div className="px-8 py-6">
           <h2 className="text-lg font-semibold text-[var(--text-heading)]">Education</h2>
         </div>
-        <div className="px-4 md:px-8 py-5 md:py-6">
+        <div className="px-8 py-6">
           <h2 className="text-lg font-semibold text-[var(--text-heading)]">Core Skills</h2>
         </div>
       </div>
@@ -44,19 +44,30 @@ export default function AboutSection() {
       <div className="grid grid-cols-1 md:grid-cols-[2fr_3fr] divide-y md:divide-y-0 md:divide-x divide-[var(--border)]">
 
         {/* Left — education */}
-        <div className="px-4 md:px-8 py-6 md:py-10 bg-[var(--bg-card)] flex flex-col gap-3">
-          <p className="text-[11px] font-mono text-[var(--text-faint)] uppercase tracking-widest">2024 — 2025</p>
-          <div className="flex items-start gap-2">
-            <GraduationCap className="w-3.5 h-3.5 text-emerald-500 mt-0.5 shrink-0" />
-            <div>
-              <p className="text-sm font-bold text-[var(--text-heading)] leading-snug">Computer Programming Diploma</p>
-              <p className="text-xs text-[var(--text-secondary)] mt-1">Red Deer Polytechnic</p>
+        <div className="bg-[var(--bg-card)]">
+          {/* Mobile sticky heading */}
+          <div className="md:hidden sticky top-14 z-40 border-b border-[var(--border)] bg-[var(--bg-surface)] backdrop-blur-xl px-4 py-4">
+            <h2 className="text-lg font-semibold text-[var(--text-heading)]">Education</h2>
+          </div>
+          <div className="px-4 md:px-8 py-6 md:py-10 flex flex-col gap-3">
+            <p className="text-[11px] font-mono text-[var(--text-faint)] uppercase tracking-widest">2024 — 2025</p>
+            <div className="flex items-start gap-2">
+              <GraduationCap className="w-3.5 h-3.5 text-emerald-500 mt-0.5 shrink-0" />
+              <div>
+                <p className="text-sm font-bold text-[var(--text-heading)] leading-snug">Computer Programming Diploma</p>
+                <p className="text-xs text-[var(--text-secondary)] mt-1">Red Deer Polytechnic</p>
+              </div>
             </div>
           </div>
         </div>
 
         {/* Right — skills */}
-        <div className="px-4 md:px-8 py-6 md:py-10">
+        <div>
+          {/* Mobile sticky heading */}
+          <div className="md:hidden sticky top-14 z-40 border-b border-[var(--border)] bg-[var(--bg-surface)] backdrop-blur-xl px-4 py-4">
+            <h2 className="text-lg font-semibold text-[var(--text-heading)]">Core Skills</h2>
+          </div>
+          <div className="px-4 md:px-8 py-6 md:py-10">
           <div className="flex flex-wrap gap-2">
             {skills.map(({ name, icon: Icon, color }) => (
               <span
@@ -71,6 +82,7 @@ export default function AboutSection() {
               <ReactQueryIcon size={13} />
               TanStack Query
             </span>
+          </div>
           </div>
         </div>
 
