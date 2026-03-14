@@ -19,6 +19,31 @@ export const metadata: Metadata = {
   title: "Pranav Talwar — Full-Stack Developer",
   description:
     "Full-Stack Developer building systems that hold under load. Open Source Contributor.",
+  icons: {
+    icon: "/site-p.svg",
+    shortcut: "/site-p.svg",
+    apple: "/site-p.svg",
+  },
+  openGraph: {
+    title: "Pranav Talwar — Full-Stack Developer",
+    description:
+      "Full-Stack Developer building systems that hold under load. Open Source Contributor.",
+    images: [
+      {
+        url: "/site-p.svg",
+        width: 1200,
+        height: 1200,
+        alt: "Pranav Talwar site mark",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pranav Talwar — Full-Stack Developer",
+    description:
+      "Full-Stack Developer building systems that hold under load. Open Source Contributor.",
+    images: ["/site-p.svg"],
+  },
 };
 
 export default function RootLayout({
