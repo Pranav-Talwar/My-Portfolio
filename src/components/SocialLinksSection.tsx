@@ -62,7 +62,7 @@ export default function SocialLinksSection() {
           <ArrowUpRight className="w-4 h-4 text-[var(--text-faint)] group-hover:text-[var(--text-heading)] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200" />
         </a>
         <a
-          href="#"
+          href="https://drive.google.com/file/d/18Pk6TiUjTI-6Bb1CTespGRYNFZbo81dN/view?usp=sharing"
           className="flex items-center justify-between p-6 hover:bg-[var(--bg-card)] transition-all duration-200 group"
         >
           <div className="flex items-center gap-4">
