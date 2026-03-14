@@ -8,9 +8,9 @@ export const featuredProjects: Project[] = [
     title: "CoSounds - Personalized Collective Adaptive Soundscapes",
     status: "live",
     challenge:
-      "A multi-step workflow requiring student contribution during peak cognitive load results in near-zero engagement in the existing system",
+      "High-friction feedback loops lead to participation failure. The system operates as an anonymous, failing to account for the distinct identities and needs of the occupants.",
     solution:
-      " One NFC tap connects you to the room\u2019s adaptive soundscapes. An ML model learns preferences in real-time and balances them across everyone in the space \u2014 personalized, frictionless, continuous.",
+      " A single-gesture NFC intent layer with individual preference vectors built per student, feeding into collective aggregation, balancing them across everyone in the space.",
     techStack: ["React", "TypeScript", "Python", "Supabase", "NFC"],
     links: [
       { href: "/projects/cosounds", label: "View Details", type: "primary" },
