@@ -78,7 +78,7 @@ export default function ContactForm() {
           <div className="flex flex-col gap-2">
             <p className="text-[11px] font-mono text-[var(--text-muted)] uppercase tracking-widest">Resume</p>
             <a
-              href="/resume.pdf"
+              href="https://drive.google.com/file/d/18Pk6TiUjTI-6Bb1CTespGRYNFZbo81dN/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-sm text-[var(--text-secondary)] hover:text-[var(--text-heading)] transition-colors group"
