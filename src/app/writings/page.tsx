@@ -16,8 +16,7 @@ export default function WritingsPage() {
           Writings
         </h1>
         <p className="text-[var(--text-secondary)] text-sm max-w-md leading-relaxed">
-          Writing on systems, NFC, UX research, and things I learned the hard way.
-        </p>
+Building, Breaking, and Understanding digital products.          </p>
       </header>
 
       {/* Post list */}
