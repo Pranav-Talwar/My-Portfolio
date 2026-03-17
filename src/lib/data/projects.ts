@@ -11,7 +11,7 @@ export const featuredProjects: Project[] = [
       "High-friction feedback loops lead to participation failure. The system operates as an anonymous, failing to account for the distinct identities and needs of the occupants.",
     solution:
       " A single-gesture NFC intent layer with individual preference vectors built per student, feeding into collective aggregation, balancing them across everyone in the space.",
-    techStack: ["React", "TypeScript", "Python", "Supabase", "NFC"],
+    techStack: ["React", "Node.js", "Python", "Supabase", "NFC"],
     links: [
       { href: "/projects/cosounds", label: "View Details", type: "primary" },
     ],
